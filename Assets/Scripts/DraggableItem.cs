@@ -7,6 +7,6 @@ public class DraggableItem : MonoBehaviour, IDragHandler
 {
     public void OnDrag(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        transform.position += (Vector3)eventData.delta;
     }
 }
